@@ -1,0 +1,1328 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="byX8X52q0XdQx2ZTAPcU6ZSHGydzWEEfAnvHelZxgbg" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Freenom,DNSPod,Synology," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="皓月的博客" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="内容介绍：免费域名申请（freenom.com），免费DNS解析（dnspod.cn），Synology NAS子域名建立关键词：免费域名申请，免费DNS解析，免费子域名解析，群晖NAS建站，python自动完成DDNS">
+<meta name="keywords" content="Freenom,DNSPod,Synology">
+<meta property="og:type" content="article">
+<meta property="og:title" content="手把手教你免费建站，免费域名，免费DNS解析，最详细的群晖建站教程">
+<meta property="og:url" content="http://www.haoyue.ml/2017/05/03/FreenomDNSPodSynology/index.html">
+<meta property="og:site_name" content="皓月的博客">
+<meta property="og:description" content="内容介绍：免费域名申请（freenom.com），免费DNS解析（dnspod.cn），Synology NAS子域名建立关键词：免费域名申请，免费DNS解析，免费子域名解析，群晖NAS建站，python自动完成DDNS">
+<meta property="og:image" content="http://www.haoyue.ml/images/freenom1.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/screenshot2.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/screenshot.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/screenshot1.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/screenshot3.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/screenshot4.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/screenshot5.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/WechatIMG5.jpeg">
+<meta property="og:image" content="http://www.haoyue.ml/images/freenom-domain_02-1.gif">
+<meta property="og:image" content="http://www.haoyue.ml/images/freenom-domain_03.gif">
+<meta property="og:image" content="http://www.haoyue.ml/images/freenom-domain_04.gif">
+<meta property="og:image" content="http://www.haoyue.ml/images/freenom-domain_05.gif">
+<meta property="og:image" content="http://www.haoyue.ml/images/freenom2.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/screenshot6.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/freenom-domain_08-530x300.gif">
+<meta property="og:image" content="http://www.haoyue.ml/images/screenshot7.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/freenom-domain_12.gif">
+<meta property="og:image" content="http://www.haoyue.ml/images/screenshot10.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/screenshot11.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/screenshot12.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/screenshot13.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/dns1.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/dns3.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/screenshot8.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/nas1.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/nas2.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/nas4.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/dns4.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/nas5.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/nas6.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/python1.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/python2.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/py3.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/py4.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/api-tokens-1.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/api-tokens-2.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/api-tokens-3.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/api-tokens-4.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/py5.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/py6.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/py7.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/py8.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/py9.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/py10.png">
+<meta property="og:image" content="http://www.haoyue.ml/images/py11.png">
+<meta property="og:updated_time" content="2017-05-09T14:56:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="手把手教你免费建站，免费域名，免费DNS解析，最详细的群晖建站教程">
+<meta name="twitter:description" content="内容介绍：免费域名申请（freenom.com），免费DNS解析（dnspod.cn），Synology NAS子域名建立关键词：免费域名申请，免费DNS解析，免费子域名解析，群晖NAS建站，python自动完成DDNS">
+<meta name="twitter:image" content="http://www.haoyue.ml/images/freenom1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: 'IPKUMPKS3C',
+      apiKey: '1e9ee798db21a00d1d750f7d1bccfefb',
+      indexName: 'HaoyueBlog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.haoyue.ml/2017/05/03/FreenomDNSPodSynology/"/>
+
+
+
+
+
+  <title>手把手教你免费建站，免费域名，免费DNS解析，最详细的群晖建站教程 | 皓月的博客</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-57704516-4', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?6998621b17f4b0d1fac0ab8a7aedbf7b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=39469102";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">皓月的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.haoyue.ml/2017/05/03/FreenomDNSPodSynology/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Haoyue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="皓月的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                手把手教你免费建站，免费域名，免费DNS解析，最详细的群晖建站教程
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-03T00:43:00+08:00">
+                2017-05-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tech/Web/" itemprop="url" rel="index">
+                    <span itemprop="name">Web</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/05/03/FreenomDNSPodSynology/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2017/05/03/FreenomDNSPodSynology/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+             <span id="/2017/05/03/FreenomDNSPodSynology/" class="leancloud_visitors" data-flag-title="手把手教你免费建站，免费域名，免费DNS解析，最详细的群晖建站教程">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>内容介绍：<br>免费域名申请（freenom.com），免费DNS解析（dnspod.cn），Synology NAS子域名建立<br>关键词：免费域名申请，免费DNS解析，免费子域名解析，群晖NAS建站，python自动完成DDNS</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="免费域名申请"><a href="#免费域名申请" class="headerlink" title="免费域名申请"></a>免费域名申请</h1><ol>
+<li><p>Freenom官方网站<a href="http://www.freenom.com/" target="_blank" rel="external">freenom</a><br><img src="/images/freenom1.png" alt="freenom主页"></p>
+</li>
+<li><p>输入你想注册的域名，例如：nihaoy，然后按回车。<br><img src="/images/screenshot2.png" alt="域名注册"></p>
+</li>
+<li><p>显示你想要注册的域名是否可注册，以及对应的费用，有.tk ，.ml ，.ga ，.cf ，.gq共5个免费域名可供选择。<br><img src="/images/screenshot.png" alt="域名搜索"></p>
+</li>
+<li><p>显示”FREE“，则说明此域名免费，点击”Get it now！“，可以多选，但不要太贪心，一个Freenom账号注册过量的域名，否则会很容易被强制删除。<br><img src="/images/screenshot1.png" alt="查看域名搜索结果"></p>
+</li>
+<li><p>点击”Checkout“，然后选择你的域名免费时长，默认的是三个月，可以选择12个月，即一年。<br><img src="/images/screenshot3.png" alt="购买免费域名"></p>
+</li>
+</ol>
+<p><img src="/images/screenshot4.png" alt="免费域名结算"></p>
+<ol>
+<li>添加域名到购物车后，然后会要求输入你的Freenom账号，没有注册过账号的可以在左下角输入你的邮箱来注册一个。也可以通过”Use social sign in“的社交账号登录，需要授权，当然登录这些账号是需要FQ的，推荐一款不错的Vultr VPS，点击<a href="http://www.vultr.com/?ref=7130443" target="_blank" rel="external">Vultr注册链接</a>送5美金。<br><img src="/images/screenshot5.png" alt="Freenom账号注册"></li>
+</ol>
+<p>如果不想购买VPS，我也可以分享自己的VPS，每月5元人民币，半年付。联系方式：<a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x79;&#106;&#120;&#x6b;&#120;&#107;&#x40;&#x71;&#113;&#x2e;&#99;&#111;&#109;">&#x79;&#106;&#120;&#x6b;&#120;&#107;&#x40;&#x71;&#113;&#x2e;&#99;&#111;&#109;</a>速度还不错的哦，以下是<a href="https://www.youtube.com" target="_blank" rel="external">youtube</a>视频测速。<br><img src="/images/WechatIMG5.jpeg" alt="VPS速度截图"></p>
+<ol>
+<li>如果是邮箱注册，Freenom会发送一封验证邮件到你的注册邮箱中，如果你是用的国内的邮箱的话可能会把邮件列入到垃圾邮件当中，甚至直接拒收。<br><img src="/images/freenom-domain_02-1.gif" alt="Freenom邮件"></li>
+</ol>
+<ol>
+<li>点击Freenom邮件中的验证链接，填写注册信息。<br><img src="/images/freenom-domain_03.gif" alt="Freenom邮件链接"></li>
+</ol>
+<p><img src="/images/freenom-domain_04.gif" alt="填写Freenom注册信息"></p>
+<ol>
+<li>填写完成后，点击提交，至此Freenom免费域名就申请成功了。<br><img src="/images/freenom-domain_05.gif" alt="freenom注册信息提交"></li>
+</ol>
+<h1 id="域名管理"><a href="#域名管理" class="headerlink" title="域名管理"></a>域名管理</h1><ol>
+<li><p>登录你之前在Freenom<a href="http://www.freenom.com/" target="_blank" rel="external">freenom</a>申请的账号。<br><img src="/images/freenom2.png" alt="登录Freenom"></p>
+</li>
+<li><p>点击顶部的“Services”，在下拉菜单中选择“My Domains”。<br><img src="/images/screenshot6.png" alt="My Domains"></p>
+</li>
+<li><p>在域名面板中可以看到你已经成功注册的域名，有域名注册时间与到期时间，“Manage Domain”就是管理域名DNS了。“Manage Domain”旁边蓝色的“Get GoSite！”可以获得免费空间，如果你没有自己的服务器，也没有购买类似阿里云，腾讯云，AWS等主机，VPS也没有，那么就用这个免费空间吧，自己探索吧。<br><img src="/images/freenom-domain_08-530x300.gif" alt="Manage Domain"></p>
+</li>
+</ol>
+<ol>
+<li><p>在域名管理中心中点击“Management Tools”，下拉菜单中点击“Nameservers”.<br><img src="/images/screenshot7.png" alt="Nameservers"></p>
+</li>
+<li><p>默认是Freenom的免费DNS，我们这里不选用Freenom的DNS，选择“Use custom nameservers(enter below)”，Nameserver我们等会来填写，接下来我们注册免费的国内DNS，因为国内DNS对国内用户解析快。<br><strong>注意：不要关闭当前页面，在下一章“国内DNS解析设置”中我们填写这里的信息。</strong><br><img src="/images/freenom-domain_12.gif" alt="默认DNS"></p>
+</li>
+</ol>
+<h1 id="国内DNS解析设置"><a href="#国内DNS解析设置" class="headerlink" title="国内DNS解析设置"></a>国内DNS解析设置</h1><ol>
+<li><p>登录<a href="https://www.dnspod.cn" target="_blank" rel="external">DNSPod中国区官方网站</a>，单击“免费注册”。<br><img src="/images/screenshot10.png" alt="DNSPod官网"></p>
+</li>
+<li><p>这个全是中文流程，国内用户很熟悉，我就不啰嗦了，可QQ，微信注册，注册完并登录后。<br><img src="/images/screenshot11.png" alt="DNSPod控制面板"></p>
+</li>
+<li><p>登录后点击“域名解析”，然后点击“添加域名”。<br><img src="/images/screenshot12.png" alt="DNSPod添加域名解析"></p>
+</li>
+<li><p>在出现的文本框中输入你注册的域名，点“确定”。<br><img src="/images/screenshot13.png" alt="添加域名"></p>
+</li>
+<li><p>点击添加好的域名，会自动导入你域名已有的解析记录，由于我们没有设置DNS记录，所以扫描完后是空的，只有DNSPod的默认NS记录。<br><img src="/images/dns1.png" alt="DNS扫描"></p>
+</li>
+<li><p>导入完毕后，在页面的上方有“还差最后一步”的提示，然后回到Freenom的“Nameservers”管理页面，将其他的Nameserver删除掉，填入DNSPod提示你的DNS解析地址。<br><strong>注意：保留这个页面不要关闭，在下一章“群晖NAS设置”中我们填写记录信息。</strong><br><img src="/images/dns3.png" alt="DNS域名解析提示"></p>
+</li>
+</ol>
+<p><img src="/images/screenshot8.png" alt="Freenom Nameservers自定义设置"></p>
+<h1 id="Synology群晖NAS设置"><a href="#Synology群晖NAS设置" class="headerlink" title="Synology群晖NAS设置"></a>Synology群晖NAS设置</h1><ol>
+<li><p>登录你的群晖NAS，我的系统是DSM 5.2，如果界面有不同请登录<a href="https://www.synology.cn/zh-cn/knowledgebase" target="_blank" rel="external">官方网站知识库查询</a>。<br><img src="/images/nas1.png" alt="登录群辉"></p>
+</li>
+<li><p>在”控制面板“中单击”外部访问“，单击“新增”。<br><img src="/images/nas2.png" alt="增加DDNS"></p>
+</li>
+<li><p>这个页面中“外部地址(IPv4):”的IP地址就是我们当前主机的外网IP地址。<br><img src="/images/nas4.png" alt="公网IP地址"></p>
+</li>
+<li><p>我们回到Freenom的DNS记录设置页面，单击“添加记录”，就会增加1条DNS解析记录，我们需要添加2条“A“类型记录，已将所需填写内容列出，按照表格中的内容填写，外部地址填写上一步中得到的IP。</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>主机记录</th>
+<th>记录类型</th>
+<th>记录值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>@</td>
+<td>A</td>
+<td>填写群晖的外部地址</td>
+</tr>
+<tr>
+<td>2</td>
+<td>*</td>
+<td>A</td>
+<td>填写群晖的外部地址</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/images/dns4.png" alt="增加DNS解析记录"></p>
+<ol>
+<li>设置完毕后，在群辉的DDNS页面填写对应的信息，”服务提供商“选择”DNSPod.cn“，我这里已选择过了，已没法第二次选择。”主机名称“填写你注册的域名，不要加”www.“，直接写你的域名，如我注册的”nihaoy.tk“就直接填写”nihaoy.tk“，”用户名“填写DNSPod的账号名称，”密码“填写DNSPod的账号密码。<br><img src="/images/nas5.png" alt="填写DNSpod注册信息"></li>
+</ol>
+<ol>
+<li><p>单击”测试联机“，等待”状态：“正常，单击”确定“。这样基本的域名解析设置完成。<br><img src="/images/nas6.png" alt="测试DNS连接"></p>
+</li>
+<li><p>但我们要增加子域名，如”blog.nihao.tk“，需要接着做下一章的设置。</p>
+</li>
+</ol>
+<h1 id="子域名设置"><a href="#子域名设置" class="headerlink" title="子域名设置"></a>子域名设置</h1><blockquote>
+<p>这部分内容需要有基本Linux操作基础以及简单的代码修改能力。</p>
+</blockquote>
+<ol>
+<li>在群晖的桌面单击”套件中心“。<br><img src="/images/python1.png" alt="套件中心"></li>
+</ol>
+<ol>
+<li>在”套件中心“中，单击”全部“，找到”Python Module“或”Python3“，选择其中的一个单击”安装套件“。<br><img src="/images/python2.png" alt="安装Python套件"></li>
+</ol>
+<ol>
+<li>安装完成后让其运行，在控制面板中开启SSH功能。单击”终端机和SNMP“，选择”启动SSH功能“，单击”确定“。<br><img src="/images/py3.png" alt="SSH设置"></li>
+</ol>
+<ol>
+<li><p>在putty或者Terminal中，SSH连接到你的群辉主机。如何SSH登陆DSM，请参阅官方教程：<a href="https://www.synology.com/zh-cn/knowledgebase/DSM/tutorial/General/How_to_login_to_DSM_with_root_permission_via_SSH_Telnet" target="_blank" rel="external">教程1</a>，<a href="https://www.synology.com/zh-cn/knowledgebase/DSM/tutorial/General/What_is_the_username_and_default_password_for_accessing_my_Synology_Product_via_Telnet_SSH" target="_blank" rel="external">教程2</a>.<br><img src="/images/py4.png" alt="SSH登录群晖主机"></p>
+</li>
+<li><p>当前在root目录，我们进入到自己账户的家目录。</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd /volume1/homes/你的用户名</div></pre></td></tr></table></figure>
+<ol>
+<li>下载<a href="https://pan.baidu.com/s/1pLhlw7p" target="_blank" rel="external">python脚本文件</a>到本地电脑，使用记事本打开即可，这里使用的是DNSPod的Token来登录，也可以使用账号，密码登录，<a href="https://gist.github.com/chuangbo/833369" target="_blank" rel="external">账号密码登录的python脚本</a>，两种方法大同小异，只是觉得Token更安全点。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#!/usr/bin/env python</span></div><div class="line"><span class="comment">#-*- coding:utf-8 -*-</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> httplib, urllib</div><div class="line"><span class="keyword">import</span> socket</div><div class="line"><span class="keyword">import</span> time</div><div class="line"></div><div class="line"><span class="comment"># Use Token, check https://support.dnspod.cn/Kb/showarticle/tsid/227/</span></div><div class="line">ID = <span class="string">"123456"</span>  <span class="comment"># relace with yours, get it as link above show you.</span></div><div class="line">Token = <span class="string">"8234897482498"</span>  <span class="comment"># relace with yours, get it as above link show you.</span></div><div class="line"></div><div class="line">params = dict(</div><div class="line">    login_token=(<span class="string">"%s,%s"</span> % (ID, Token)),</div><div class="line">    format=<span class="string">"json"</span>,</div><div class="line">    domain_id=<span class="number">8888</span>, <span class="comment"># replace with your domain_od, can get it by API Domain.List</span></div><div class="line">    record_id=<span class="number">8888</span>, <span class="comment"># replace with your record_id, can get it by API Record.List</span></div><div class="line">    sub_domain=<span class="string">"*"</span>, <span class="comment"># replace with your sub_domain</span></div><div class="line">    record_line=<span class="string">"默认"</span>,</div><div class="line">)</div><div class="line">current_ip = <span class="keyword">None</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">ddns</span><span class="params">(ip)</span>:</span></div><div class="line">    params.update(dict(value=ip))</div><div class="line">    headers = &#123;<span class="string">"Content-type"</span>: <span class="string">"application/x-www-form-urlencoded"</span>, <span class="string">"Accept"</span>: <span class="string">"text/json"</span>&#125;</div><div class="line">    conn = httplib.HTTPSConnection(<span class="string">"dnsapi.cn"</span>)</div><div class="line">    conn.request(<span class="string">"POST"</span>, <span class="string">"/Record.Ddns"</span>, urllib.urlencode(params), headers)</div><div class="line">    </div><div class="line">    response = conn.getresponse()</div><div class="line">    <span class="keyword">print</span> response.status, response.reason</div><div class="line">    data = response.read()</div><div class="line">    <span class="keyword">print</span> data</div><div class="line">    conn.close()</div><div class="line">    <span class="keyword">return</span> response.status == <span class="number">200</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">getip</span><span class="params">()</span>:</span></div><div class="line">    sock = socket.create_connection((<span class="string">'ns1.dnspod.net'</span>, <span class="number">6666</span>),<span class="number">10</span>)</div><div class="line">    ip = sock.recv(<span class="number">16</span>)</div><div class="line">    sock.close()</div><div class="line">    <span class="keyword">return</span> ip</div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</div><div class="line">        <span class="keyword">try</span>:</div><div class="line">            ip = getip()</div><div class="line">            <span class="keyword">print</span> ip</div><div class="line">            <span class="keyword">if</span> current_ip != ip:</div><div class="line">                <span class="keyword">if</span> ddns(ip):</div><div class="line">                    current_ip = ip</div><div class="line">        <span class="keyword">except</span> Exception, e:</div><div class="line">            <span class="keyword">print</span> e</div><div class="line">            <span class="keyword">pass</span></div><div class="line">        time.sleep(<span class="number">120</span>)</div></pre></td></tr></table></figure>
+<ol>
+<li><p>DNSPod申请Token，打开DNSPod控制台，创建一个 Token，依次点击 用户中心 -&gt; 安全设置 -&gt; API Token：<br><img src="/images/api-tokens-1.png" alt="DNSPod申请Token"></p>
+</li>
+<li><p>点击创建一个 Token，输入 Token 名称即可，名称仅用来标记 Token，方便用户管理 Token ，不参与鉴权。<br><img src="/images/api-tokens-2.png" alt="创建Token"></p>
+</li>
+</ol>
+<ol>
+<li>点击 “确定” 之后，Token 创建成功，会弹出如下提示框：<img src="/images/api-tokens-3.png" alt="Token申请完成"></li>
+</ol>
+<p>同时，用户帐号邮箱会收到 Token 创建成功的邮件：<br><img src="/images/api-tokens-4.png" alt="Token创建成功邮件"></p>
+<ol>
+<li>然后在打开的Python脚本中，找到如下两行，替换为你刚注册的信息。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ID = &quot;123456&quot;  # relace with yours, get it as link above show you.</div><div class="line">Token = &quot;8234897482498&quot;  # relace with yours, get it as above link show you.</div></pre></td></tr></table></figure>
+<ol>
+<li>下载<a href="https://support.dnspod.cn/Support/api" target="_blank" rel="external">DNSPod客户端</a>，或者通过命令获取你的“domain_id”和“record_id”。<br>下载完的客户端解压，双击“DNSPodClient”文件夹中“StartDNSPod.exe”，输入账户和密码，单击“登录”。<br><img src="/images/py5.png" alt="DNSPod客户端登录"></li>
+</ol>
+<p>登录后出现你的所有域名解析，ID列就是你域名的“domain_id”，使用这串数字替换Python脚本中的<br><code>domain_id=8888,</code>。<br><img src="/images/py6.png" alt="DNSPod domain id"></p>
+<p>双击你的域名，弹出的窗口中显示你的所有子域名解析，用“*”这行的ID替换到Python脚本的<code>record_id=8888,</code>。<br><img src="/images/py7.png" alt="DNSPod record id"></p>
+<p>通过curl获得的方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">curl -k https://dnsapi.cn/Domain.List -d &quot;login_email=xxx&amp;login_password=xxx&quot;</div><div class="line">curl -k https://dnsapi.cn/Record.List -d &quot;login_email=xxx&amp;login_password=xxx&amp;domain_id=xxx&quot;</div></pre></td></tr></table></figure>
+<p>将其中的“XXX”填写为你DNSPod的账户信息，在Terminal或者Putty中运行，得到xml信息，可以从中得到你的domain_id，再用domain_id获取你的record_id，一样的方法。<br><img src="/images/py8.png" alt="命令方法得到id"></p>
+<ol>
+<li>保存你的修改，将DNSPodDDNS.py上传到群晖服务器，使用scp命令。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># scp命令格式：  </div><div class="line">scp local_file remote_username@remote_ip:remote_folder </div><div class="line"># 命令例子：</div><div class="line">scp /opt/soft/nginx-0.5.38.tar.gz root@192.168.120.204:/opt/soft/scptest</div></pre></td></tr></table></figure>
+<ol>
+<li>SSH登录群晖，修改Python的权限，并运行，这样就能让服务器的IP地址同步到DNSPod了，不用手动填写。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">chmod +x ./DNSPodDDNS.py</div><div class="line">nohup python /volume1/homes/xxx/pypod.py &amp;</div></pre></td></tr></table></figure>
+<ol>
+<li>设置Python脚本开机启动，这样就可以永远不用管IP地址同步飞问题了，无论意外断电还是重启机器，有两种方法实现：</li>
+</ol>
+<ul>
+<li>在 /etc 下创建 rc.local 文件, 在其中加入需要执行的命令，并为其添加执行权限：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">touch /etc/rc.local</div><div class="line">chmod +x /etc/rc.local</div></pre></td></tr></table></figure>
+<p>需要注意，所有文件最好使用<a href="http://www.letuknowit.com/topics/20120312/absolute-path-and-relative-path-in-linux.html/" target="_blank" rel="external">绝对路径</a>。</p>
+<ul>
+<li>在 /usr/syno/etc/rc.d 下创建启动脚本，文件名为 Snnxxxx.sh。<br><strong>nn</strong>为一个二位数，越大执行顺序越后。<br><strong>xxxx</strong> 为自己取得有意义的文件名，长度可以是1个或更多的字母数字。<br>并为你的脚本文件添加执行权限：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">touch /usr/syno/etc/rc.d/Snnxxxx.sh</div><div class="line">chmod +x /usr/syno/etc/rc.d/Snnxxxx.sh</div></pre></td></tr></table></figure>
+<p>建议这里的“<strong>nn</strong>“使用”<strong>99</strong>“。</p>
+<ul>
+<li>在新建的rc.local或Snnxxxx.sh中写入如下内容：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#!/bin/sh</div><div class="line">nohup python /volume1/homes/xxx/pypod.py &amp;</div><div class="line">exit 0</div></pre></td></tr></table></figure>
+<ol>
+<li><p>登录到群晖NAS，打开”控制面板“，依次点击 Web服务-&gt;虚拟主机-&gt;新增，<br><img src="/images/py9.png" alt="开启Web虚拟主机"></p>
+</li>
+<li><p>填写子域名相关属性，这里以WordPress为例，当在”<strong>套件中心</strong>“安装完”WordPress“后，会在<code>/volume1/web/</code>目录下生成”wordpress“文件夹，如果我们要将”blog.nihaoy.ml”指向wordpress则按照如下方式填写，然后单击”确定“，要添加其他子域名类似的方式，只是安装不同的套件。<br><img src="/images/py10.png" alt="虚拟主机属性"></p>
+</li>
+<li><p>现在全部设置完了，但有一个问题，有一些地区的网络服务商（如北京联通），他们可能不让普通用户使用<strong>80端口</strong>，解决方法是换成其他端口，或者打电话报修，让来维修的人帮你申请开放<strong>80端口</strong>，一定要对人家客气，礼貌点哈！这里记住一点，一定要有公网IP地址。</p>
+</li>
+<li>当你的<strong>80端口</strong>可以使用后，就需要设置路由器的端口转发了，不同的路由器不同，我这里以Asus的路由器为例：打开路由器设置界面，在“外部网络”-&gt;“端口转发”中设置，点添加，最后应用设置，大功告成！现在你可以在网页中输入”bbs.nihaoy.ml”访问你的blog了。<br><img src="/images/py11.png" alt="路由器设置"></li>
+</ol>
+<p><strong><a href="http://wenku.baidu.com/view/e67fb4d233d4b14e852468f2.html" target="_blank" rel="external">常用路由器的端口转发设置</a></strong></p>
+<h1 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h1><p>结束了漫长的操作，我们终于可以享受最终的果实了，教程中可能有不详之处和错误，还请大家多指正，共同学习，共同成长，共同进步，谢谢！</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/haoyuemessage.jpg" alt="Haoyue wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎订阅微信公众号！</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>皓月分享，如有帮助，赏之以励！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/RewardPay/WechatPay.png" alt="Haoyue WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/RewardPay/AliPay.png" alt="Haoyue Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Haoyue
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://www.haoyue.ml/2017/05/03/FreenomDNSPodSynology/" title="手把手教你免费建站，免费域名，免费DNS解析，最详细的群晖建站教程">http://www.haoyue.ml/2017/05/03/FreenomDNSPodSynology/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Freenom/" rel="tag"># Freenom</a>
+          
+            <a href="/tags/DNSPod/" rel="tag"># DNSPod</a>
+          
+            <a href="/tags/Synology/" rel="tag"># Synology</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/02/AD 3D method/" rel="next" title="Altium Designer 创建3D模型的方法">
+                <i class="fa fa-chevron-left"></i> Altium Designer 创建3D模型的方法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/05/SoftwareVersion/" rel="prev" title="软件项目版本号的命名规则及格式">
+                软件项目版本号的命名规则及格式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5905bf6b92246f82" async = "async" ></script>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="hypercomments_widget"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="Haoyue" />
+          <p class="site-author-name" itemprop="name">Haoyue</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/ZakiLiu" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/LYue2" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.facebook.com/lhaoyue" target="_blank" title="Facebook">
+                  
+                    <i class="fa fa-fw fa-facebook"></i>
+                  
+                  Facebook
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://t.cn/RXkqG1v" target="_blank" title="WeChat">
+                  
+                    <i class="fa fa-fw fa-wechat"></i>
+                  
+                  WeChat
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#免费域名申请"><span class="nav-number">1.</span> <span class="nav-text">免费域名申请</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#域名管理"><span class="nav-number">2.</span> <span class="nav-text">域名管理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#国内DNS解析设置"><span class="nav-number">3.</span> <span class="nav-text">国内DNS解析设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Synology群晖NAS设置"><span class="nav-number">4.</span> <span class="nav-text">Synology群晖NAS设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#子域名设置"><span class="nav-number">5.</span> <span class="nav-text">子域名设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结束"><span class="nav-number">6.</span> <span class="nav-text">结束</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Haoyue</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
+
+		_hcwp.push({widget:"Bloggerstream", widget_id: 90308, selector:".hc-comment-count", label: "{\%COUNT%\}" });
+
+		
+		_hcwp.push({widget:"Stream", widget_id: 90308, xid: "2017/05/03/FreenomDNSPodSynology/"});
+		
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/90308/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.1"></script>
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("nObDsGOwNyOgptrqQ2MfwqUK-gzGzoHsz", "jHngwyaLa1iQDHnc32Nsy24m");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+
+  
+
+  
+
+</body>
+</html>

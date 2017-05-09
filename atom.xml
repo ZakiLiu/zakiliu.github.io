@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>皓月的博客</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.haoyue.ml/"/>
+  <updated>2017-05-09T16:34:11.000Z</updated>
+  <id>http://www.haoyue.ml/</id>
+  
+  <author>
+    <name>Haoyue</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ShadowSocks &amp; ShadowSocksR教程</title>
+    <link href="http://www.haoyue.ml/2017/05/09/SSTutorial/"/>
+    <id>http://www.haoyue.ml/2017/05/09/SSTutorial/</id>
+    <published>2017-05-09T14:48:53.000Z</published>
+    <updated>2017-05-09T16:34:11.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;内容介绍：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;介绍ShadowSocks在Windows，Mac，iOS，Android的配置方法。&lt;/li&gt;
+&lt;li&gt;介绍ShadowSocksR在Windows，Mac，iOS，Android的配置方法。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://www.haoyue.ml/categories/Tech/"/>
+    
+      <category term="Web" scheme="http://www.haoyue.ml/categories/Tech/Web/"/>
+    
+    
+      <category term="ShadowSocks" scheme="http://www.haoyue.ml/tags/ShadowSocks/"/>
+    
+      <category term="ShadowSocksR" scheme="http://www.haoyue.ml/tags/ShadowSocksR/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS如何定时运行任务</title>
+    <link href="http://www.haoyue.ml/2017/05/09/CentOS%20%E8%BF%90%E8%A1%8C%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
+    <id>http://www.haoyue.ml/2017/05/09/CentOS 运行定时任务/</id>
+    <published>2017-05-09T02:22:00.000Z</published>
+    <updated>2017-05-09T16:35:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;内容介绍：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Crontab安装，启动&lt;/li&gt;
+&lt;li&gt;Crontab命令语法，参数，示例&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://www.haoyue.ml/categories/Tech/"/>
+    
+      <category term="Linux" scheme="http://www.haoyue.ml/categories/Tech/Linux/"/>
+    
+      <category term="CentOS" scheme="http://www.haoyue.ml/categories/Tech/Linux/CentOS/"/>
+    
+    
+      <category term="CentOS" scheme="http://www.haoyue.ml/tags/CentOS/"/>
+    
+      <category term="crontab" scheme="http://www.haoyue.ml/tags/crontab/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IAR 学习笔记</title>
+    <link href="http://www.haoyue.ml/2017/05/08/IARLearningNote/"/>
+    <id>http://www.haoyue.ml/2017/05/08/IARLearningNote/</id>
+    <published>2017-05-08T08:25:00.000Z</published>
+    <updated>2017-05-08T09:06:01.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;内容介绍：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;记录IAR学习中的问题和解决办法&lt;/li&gt;
+&lt;li&gt;记录网络中一些好的技巧和方法&lt;/li&gt;
+&lt;li&gt;官方资料整理&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://www.haoyue.ml/categories/Tech/"/>
+    
+      <category term="IDE" scheme="http://www.haoyue.ml/categories/Tech/IDE/"/>
+    
+      <category term="IAR" scheme="http://www.haoyue.ml/categories/Tech/IDE/IAR/"/>
+    
+    
+      <category term="IAR" scheme="http://www.haoyue.ml/tags/IAR/"/>
+    
+      <category term="Note" scheme="http://www.haoyue.ml/tags/Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>特斯拉电池技术大突破：48万公里仅衰减5%</title>
+    <link href="http://www.haoyue.ml/2017/05/07/teslaBattery-md/"/>
+    <id>http://www.haoyue.ml/2017/05/07/teslaBattery-md/</id>
+    <published>2017-05-07T07:44:49.000Z</published>
+    <updated>2017-05-09T14:55:20.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;内容介绍：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;奔驰也承认燃油车没有未来，电动方案才是主流趋势。&lt;/li&gt;
+&lt;li&gt;Tesla找到方式能够让车辆在行驶48万公里后，电池的衰减控制在5%以内。&lt;/li&gt;
+&lt;li&gt;电池24年后电池容量仍然可以达到出厂容量的95%。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="News" scheme="http://www.haoyue.ml/categories/News/"/>
+    
+      <category term="New energy" scheme="http://www.haoyue.ml/categories/News/New-energy/"/>
+    
+      <category term="Tesla" scheme="http://www.haoyue.ml/categories/News/New-energy/Tesla/"/>
+    
+    
+      <category term="Tesla" scheme="http://www.haoyue.ml/tags/Tesla/"/>
+    
+      <category term="Battery" scheme="http://www.haoyue.ml/tags/Battery/"/>
+    
+      <category term="NMC三元锂电池" scheme="http://www.haoyue.ml/tags/NMC%E4%B8%89%E5%85%83%E9%94%82%E7%94%B5%E6%B1%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件项目版本号的命名规则及格式</title>
+    <link href="http://www.haoyue.ml/2017/05/05/SoftwareVersion/"/>
+    <id>http://www.haoyue.ml/2017/05/05/SoftwareVersion/</id>
+    <published>2017-05-05T08:06:00.000Z</published>
+    <updated>2017-05-09T14:55:35.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;内容介绍：&lt;br&gt;版本号命名方式比较普遍的有3种命名方式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;GNU 风格的版本号命名格式&lt;/li&gt;
+&lt;li&gt;Windows 风格的版本号命名格式&lt;/li&gt;
+&lt;li&gt;.Net Framework 风格的版本号命名格式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://www.haoyue.ml/categories/Tech/"/>
+    
+      <category term="SVC" scheme="http://www.haoyue.ml/categories/Tech/SVC/"/>
+    
+      <category term="Rules" scheme="http://www.haoyue.ml/categories/Tech/SVC/Rules/"/>
+    
+    
+      <category term="GNU" scheme="http://www.haoyue.ml/tags/GNU/"/>
+    
+      <category term="Windows" scheme="http://www.haoyue.ml/tags/Windows/"/>
+    
+      <category term=".Net Framework" scheme="http://www.haoyue.ml/tags/Net-Framework/"/>
+    
+      <category term="软件版本名称" scheme="http://www.haoyue.ml/tags/%E8%BD%AF%E4%BB%B6%E7%89%88%E6%9C%AC%E5%90%8D%E7%A7%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手把手教你免费建站，免费域名，免费DNS解析，最详细的群晖建站教程</title>
+    <link href="http://www.haoyue.ml/2017/05/03/FreenomDNSPodSynology/"/>
+    <id>http://www.haoyue.ml/2017/05/03/FreenomDNSPodSynology/</id>
+    <published>2017-05-02T16:43:00.000Z</published>
+    <updated>2017-05-09T14:56:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;内容介绍：&lt;br&gt;免费域名申请（freenom.com），免费DNS解析（dnspod.cn），Synology NAS子域名建立&lt;br&gt;关键词：免费域名申请，免费DNS解析，免费子域名解析，群晖NAS建站，python自动完成DDNS&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://www.haoyue.ml/categories/Tech/"/>
+    
+      <category term="Web" scheme="http://www.haoyue.ml/categories/Tech/Web/"/>
+    
+    
+      <category term="Freenom" scheme="http://www.haoyue.ml/tags/Freenom/"/>
+    
+      <category term="DNSPod" scheme="http://www.haoyue.ml/tags/DNSPod/"/>
+    
+      <category term="Synology" scheme="http://www.haoyue.ml/tags/Synology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Altium Designer 创建3D模型的方法</title>
+    <link href="http://www.haoyue.ml/2017/05/02/AD%203D%20method/"/>
+    <id>http://www.haoyue.ml/2017/05/02/AD 3D method/</id>
+    <published>2017-05-02T05:43:00.000Z</published>
+    <updated>2017-05-05T15:19:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Altium Designer 有3中方法建立3D模型&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;用 AD 自带的 3D Body，建立简单的 3D 模型构架。&lt;/li&gt;
+&lt;li&gt;去相关网站供应商处下载 3D 模型文件，最好是step格式的，在封装库中导入。&lt;/li&gt;
+&lt;li&gt;SolidWorks 等专业三维软件来创建3D模型，生成step文件，在封装库中导入。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PS: 推荐一个网站 &lt;a href=&quot;http://www.3dcontentcentral.cn/default.aspx&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.3dcontentcentral.cn/default.aspx&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://www.haoyue.ml/categories/Tech/"/>
+    
+      <category term="EDA" scheme="http://www.haoyue.ml/categories/Tech/EDA/"/>
+    
+      <category term="AD" scheme="http://www.haoyue.ml/categories/Tech/EDA/AD/"/>
+    
+    
+      <category term="3D Library" scheme="http://www.haoyue.ml/tags/3D-Library/"/>
+    
+      <category term="Altium Designer" scheme="http://www.haoyue.ml/tags/Altium-Designer/"/>
+    
+  </entry>
+  
+</feed>
