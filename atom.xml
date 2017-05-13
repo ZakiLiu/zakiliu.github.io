@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.haoyue.ml/"/>
-  <updated>2017-05-09T16:34:11.000Z</updated>
+  <updated>2017-05-13T14:54:49.000Z</updated>
   <id>http://www.haoyue.ml/</id>
   
   <author>
@@ -14,6 +14,70 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>File Station使用介绍</title>
+    <link href="http://www.haoyue.ml/2017/05/13/HowToUseFileStation/"/>
+    <id>http://www.haoyue.ml/2017/05/13/HowToUseFileStation/</id>
+    <published>2017-05-13T13:43:35.000Z</published>
+    <updated>2017-05-13T14:54:49.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;内容介绍：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;介绍Synology 的File Station访问方法。&lt;/li&gt;
+&lt;li&gt;File Station在移动平台的操作方法。&lt;/li&gt;
+&lt;li&gt;File Station的网页基本操作。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://www.haoyue.ml/categories/Tech/"/>
+    
+      <category term="Linux" scheme="http://www.haoyue.ml/categories/Tech/Linux/"/>
+    
+      <category term="Synology" scheme="http://www.haoyue.ml/categories/Tech/Linux/Synology/"/>
+    
+    
+      <category term="Synology" scheme="http://www.haoyue.ml/tags/Synology/"/>
+    
+      <category term="FileStation" scheme="http://www.haoyue.ml/tags/FileStation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Synology技术积累</title>
+    <link href="http://www.haoyue.ml/2017/05/10/SynologyTech/"/>
+    <id>http://www.haoyue.ml/2017/05/10/SynologyTech/</id>
+    <published>2017-05-10T14:57:48.000Z</published>
+    <updated>2017-05-10T15:08:01.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;内容介绍：&lt;br&gt;这个blog主要分享一些群晖服务器运维方法和技术，内容随时更新。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Synology FTP目录文件夹的设定&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://www.haoyue.ml/categories/Tech/"/>
+    
+      <category term="Linux" scheme="http://www.haoyue.ml/categories/Tech/Linux/"/>
+    
+      <category term="Synology" scheme="http://www.haoyue.ml/categories/Tech/Linux/Synology/"/>
+    
+    
+      <category term="Synology" scheme="http://www.haoyue.ml/tags/Synology/"/>
+    
+      <category term="Linux" scheme="http://www.haoyue.ml/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>ShadowSocks &amp; ShadowSocksR教程</title>
@@ -187,7 +251,7 @@
     <link href="http://www.haoyue.ml/2017/05/03/FreenomDNSPodSynology/"/>
     <id>http://www.haoyue.ml/2017/05/03/FreenomDNSPodSynology/</id>
     <published>2017-05-02T16:43:00.000Z</published>
-    <updated>2017-05-09T14:56:00.000Z</updated>
+    <updated>2017-05-09T16:36:41.000Z</updated>
     
     <summary type="html">
     
