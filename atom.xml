@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.haoyue.ml/"/>
-  <updated>2017-05-23T14:23:31.000Z</updated>
+  <updated>2017-06-11T15:32:50.000Z</updated>
   <id>http://www.haoyue.ml/</id>
   
   <author>
@@ -14,6 +14,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>capacitance</title>
+    <link href="http://www.haoyue.ml/2017/06/11/capacitance/"/>
+    <id>http://www.haoyue.ml/2017/06/11/capacitance/</id>
+    <published>2017-06-11T15:01:47.000Z</published>
+    <updated>2017-06-11T15:32:50.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://opou03531.bkt.clouddn.com/2017-06-11-capacitance.gif&quot; alt=&quot;电容&quot;&gt;&lt;br&gt;电容也是电路中常用的元器件，我们一起看看它的秘密。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://www.haoyue.ml/categories/Tech/"/>
+    
+      <category term="Electronic" scheme="http://www.haoyue.ml/categories/Tech/Electronic/"/>
+    
+    
+      <category term="Electronic" scheme="http://www.haoyue.ml/tags/Electronic/"/>
+    
+      <category term="Capacitance" scheme="http://www.haoyue.ml/tags/Capacitance/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>resistance</title>
+    <link href="http://www.haoyue.ml/2017/06/11/resistance/"/>
+    <id>http://www.haoyue.ml/2017/06/11/resistance/</id>
+    <published>2017-06-11T14:49:26.000Z</published>
+    <updated>2017-06-11T15:00:39.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://opou03531.bkt.clouddn.com/2017-06-11-resistance.jpg&quot; alt=&quot;电阻&quot;&gt;&lt;br&gt;电阻是电路中最常用的元器件，但它却有很多秘密，我们一起发现它的秘密！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://www.haoyue.ml/categories/Tech/"/>
+    
+      <category term="Electronic" scheme="http://www.haoyue.ml/categories/Tech/Electronic/"/>
+    
+    
+      <category term="Electronic" scheme="http://www.haoyue.ml/tags/Electronic/"/>
+    
+      <category term="Resistance" scheme="http://www.haoyue.ml/tags/Resistance/"/>
+    
+  </entry>
   
   <entry>
     <title>Modbus汇总</title>
@@ -342,7 +390,7 @@
     <link href="http://www.haoyue.ml/2017/05/03/FreenomDNSPodSynology/"/>
     <id>http://www.haoyue.ml/2017/05/03/FreenomDNSPodSynology/</id>
     <published>2017-05-02T16:43:00.000Z</published>
-    <updated>2017-05-23T14:34:37.000Z</updated>
+    <updated>2017-06-11T14:49:52.000Z</updated>
     
     <summary type="html">
     
@@ -357,11 +405,11 @@
       <category term="Web" scheme="http://www.haoyue.ml/categories/Tech/Web/"/>
     
     
+      <category term="Synology" scheme="http://www.haoyue.ml/tags/Synology/"/>
+    
       <category term="Freenom" scheme="http://www.haoyue.ml/tags/Freenom/"/>
     
       <category term="DNSPod" scheme="http://www.haoyue.ml/tags/DNSPod/"/>
-    
-      <category term="Synology" scheme="http://www.haoyue.ml/tags/Synology/"/>
     
   </entry>
   
@@ -370,7 +418,7 @@
     <link href="http://www.haoyue.ml/2017/05/02/AD%203D%20method/"/>
     <id>http://www.haoyue.ml/2017/05/02/AD 3D method/</id>
     <published>2017-05-02T05:43:00.000Z</published>
-    <updated>2017-05-23T14:22:14.000Z</updated>
+    <updated>2017-06-11T14:50:01.000Z</updated>
     
     <summary type="html">
     
