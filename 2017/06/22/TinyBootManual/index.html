@@ -76,7 +76,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Electronic,Resistance," />
+  <meta name="keywords" content="STM8,Bootloader," />
 
 
 
@@ -94,19 +94,24 @@
 
 
 
-<meta name="description" content="电阻是电路中最常用的元器件，但它却有很多秘密，我们一起发现它的秘密！">
-<meta name="keywords" content="Electronic,Resistance">
+<meta name="description" content="Tinyboot是一个适用于STM8S系列的微小Bootloader，单片机端仅占用256B Flash空间。Flash中的这256B代码，和上位机程序配合，实现完整的引导加载程序功能。">
+<meta name="keywords" content="STM8,Bootloader">
 <meta property="og:type" content="article">
-<meta property="og:title" content="resistance">
-<meta property="og:url" content="http://www.haoyue.ml/2017/06/11/resistance/index.html">
+<meta property="og:title" content="TinyBootManual">
+<meta property="og:url" content="http://www.haoyue.ml/2017/06/22/TinyBootManual/index.html">
 <meta property="og:site_name" content="皓月的博客">
-<meta property="og:description" content="电阻是电路中最常用的元器件，但它却有很多秘密，我们一起发现它的秘密！">
-<meta property="og:image" content="http://opou03531.bkt.clouddn.com/2017-06-11-resistance.jpg">
-<meta property="og:updated_time" content="2017-06-11T15:00:39.000Z">
+<meta property="og:description" content="Tinyboot是一个适用于STM8S系列的微小Bootloader，单片机端仅占用256B Flash空间。Flash中的这256B代码，和上位机程序配合，实现完整的引导加载程序功能。">
+<meta property="og:image" content="http://opou03531.bkt.clouddn.com/blog/20170622/133220460.png?imageslim">
+<meta property="og:image" content="http://opou03531.bkt.clouddn.com/blog/20170622/135417609.jpg">
+<meta property="og:image" content="http://opou03531.bkt.clouddn.com/blog/20170622/142418450.png?imageslim">
+<meta property="og:image" content="http://opou03531.bkt.clouddn.com/blog/20170622/143307539.gif">
+<meta property="og:image" content="http://opou03531.bkt.clouddn.com/blog/20170622/143904829.gif">
+<meta property="og:image" content="http://opou03531.bkt.clouddn.com/blog/20170622/144554853.gif">
+<meta property="og:updated_time" content="2017-06-22T06:59:45.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="resistance">
-<meta name="twitter:description" content="电阻是电路中最常用的元器件，但它却有很多秘密，我们一起发现它的秘密！">
-<meta name="twitter:image" content="http://opou03531.bkt.clouddn.com/2017-06-11-resistance.jpg">
+<meta name="twitter:title" content="TinyBootManual">
+<meta name="twitter:description" content="Tinyboot是一个适用于STM8S系列的微小Bootloader，单片机端仅占用256B Flash空间。Flash中的这256B代码，和上位机程序配合，实现完整的引导加载程序功能。">
+<meta name="twitter:image" content="http://opou03531.bkt.clouddn.com/blog/20170622/133220460.png?imageslim">
 
 
 
@@ -134,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="http://www.haoyue.ml/2017/06/11/resistance/"/>
+  <link rel="canonical" href="http://www.haoyue.ml/2017/06/22/TinyBootManual/"/>
 
 
 
 
 
-  <title>resistance | 皓月的博客</title>
+  <title>TinyBootManual | 皓月的博客</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -335,7 +340,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.haoyue.ml/2017/06/11/resistance/">
+    <link itemprop="mainEntityOfPage" href="http://www.haoyue.ml/2017/06/22/TinyBootManual/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Haoyue">
@@ -356,7 +361,7 @@
             
             
               
-                resistance
+                TinyBootManual
               
             
           </h1>
@@ -371,8 +376,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-11T22:49:26+08:00">
-                2017-06-11
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-22T13:25:01+08:00">
+                2017-06-22
               </time>
             
 
@@ -405,8 +410,19 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Tech/Electronic/" itemprop="url" rel="index">
-                    <span itemprop="name">Electronic</span>
+                  <a href="/categories/Tech/ST/" itemprop="url" rel="index">
+                    <span itemprop="name">ST</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tech/ST/STM8/" itemprop="url" rel="index">
+                    <span itemprop="name">STM8</span>
                   </a>
                 </span>
 
@@ -423,9 +439,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/06/11/resistance/#comments" itemprop="discussionUrl">
+                <a href="/2017/06/22/TinyBootManual/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/06/11/resistance/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/06/22/TinyBootManual/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -433,7 +449,7 @@
 
           
           
-             <span id="/2017/06/11/resistance/" class="leancloud_visitors" data-flag-title="resistance">
+             <span id="/2017/06/22/TinyBootManual/" class="leancloud_visitors" data-flag-title="TinyBootManual">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -466,15 +482,76 @@
       
 
       
-        <p><img src="http://opou03531.bkt.clouddn.com/2017-06-11-resistance.jpg" alt="电阻"><br>电阻是电路中最常用的元器件，但它却有很多秘密，我们一起发现它的秘密！</p>
-<a id="more"></a>
-<h1 id="电阻器"><a href="#电阻器" class="headerlink" title="电阻器"></a>电阻器</h1><blockquote>
-<p>定义：在电路中对电路有阻碍作用并且造成能量消耗的部分叫电阻。</p>
+        <blockquote>
+<p><img src="http://opou03531.bkt.clouddn.com/blog/20170622/133220460.png?imageslim" alt="TinyBoot"></p>
+<p><strong>Tinyboot</strong>是一个适用于<strong>STM8S</strong>系列的微小Bootloader，单片机端仅占用<strong>256B</strong> Flash空间。Flash中的这256B代码，和上位机程序配合，实现完整的引导加载程序功能。</p>
 </blockquote>
-<ul>
-<li>电阻的作用： <strong>分流，限流，分压，偏置，滤波(与电容组合)和阻抗匹配等</strong>。</li>
-<li>电阻器分类：国标分为E-24系列和E-96系列，E-24系列为5%，E-96系列为1%。  </li>
-</ul>
+<a id="more"></a>
+<h1 id="硬件需求"><a href="#硬件需求" class="headerlink" title="硬件需求"></a>硬件需求</h1><ol>
+<li>USB转TTL模块</li>
+<li>10S2P PCB板</li>
+<li>PC</li>
+<li>脱机编程器</li>
+</ol>
+<h1 id="BOOT代码烧写"><a href="#BOOT代码烧写" class="headerlink" title="BOOT代码烧写"></a>BOOT代码烧写</h1><ol>
+<li><p>先将使用脱机编程器将”boot.hex”烧入目标PCB，脱机编程器的使用方法见<a href="http://doc.haoyue.ml/Tools/%E8%84%B1%E6%9C%BA%E7%BC%96%E7%A8%8B%E5%99%A8/" target="_blank" rel="external">此链接</a>。</p>
+</li>
+<li><p>将烧写完毕的PCB按照下图连接。<br><img src="http://opou03531.bkt.clouddn.com/blog/20170622/135417609.jpg" alt="连接示意图"></p>
+</li>
+</ol>
+<p>图中数字标识含义：</p>
+<table>
+<thead>
+<tr>
+<th>数字标识</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①</td>
+<td>PC或笔记本</td>
+</tr>
+<tr>
+<td>②</td>
+<td>USB-TTL</td>
+</tr>
+<tr>
+<td>③</td>
+<td>线束转接PCB</td>
+</tr>
+<tr>
+<td>④</td>
+<td>待下载PCB</td>
+</tr>
+<tr>
+<td>⑤</td>
+<td>TTL线（包含RxD，TxD，GND）</td>
+</tr>
+<tr>
+<td>⑥</td>
+<td>8Pin线束</td>
+</tr>
+</tbody>
+</table>
+<h1 id="代码烧写"><a href="#代码烧写" class="headerlink" title="代码烧写"></a>代码烧写</h1><ol>
+<li><p>在PC端打开”<strong>TinyBoot For STM8 V5.3.1.exe</strong>“,按照下图设置。<br><img src="http://opou03531.bkt.clouddn.com/blog/20170622/142418450.png?imageslim" alt="主界面设置图"></p>
+</li>
+<li><p>打开帮助,输入”<strong>A5</strong>“Boot触发命令，如下图:<br><img src="http://opou03531.bkt.clouddn.com/blog/20170622/143307539.gif" alt="输入触发命令"></p>
+</li>
+<li><p>加载需要下载的固件，如下图:<br><img src="http://opou03531.bkt.clouddn.com/blog/20170622/143904829.gif" alt="加载固件"></p>
+</li>
+<li><p>下载固件，首先要<strong>保证PCB有电</strong>，然后按照下图操作。<br><img src="http://opou03531.bkt.clouddn.com/blog/20170622/144554853.gif" alt="下载固件"></p>
+</li>
+</ol>
+<blockquote>
+<p>注意：</p>
+<ol>
+<li>在下载固件时要保证PCB板有电。</li>
+<li>波特率全部为115200.</li>
+<li>boot代码下载一次即可，随后更新可直接通过上位机下载，但条件是加载的固件为指定固件，这会在邮件中说明。</li>
+</ol>
+</blockquote>
 
       
     </div>
@@ -529,7 +606,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="http://www.haoyue.ml/2017/06/11/resistance/" title="resistance">http://www.haoyue.ml/2017/06/11/resistance/</a>
+      <a href="http://www.haoyue.ml/2017/06/22/TinyBootManual/" title="TinyBootManual">http://www.haoyue.ml/2017/06/22/TinyBootManual/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -545,9 +622,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Electronic/" rel="tag"># Electronic</a>
+            <a href="/tags/STM8/" rel="tag"># STM8</a>
           
-            <a href="/tags/Resistance/" rel="tag"># Resistance</a>
+            <a href="/tags/Bootloader/" rel="tag"># Bootloader</a>
           
         </div>
       
@@ -560,8 +637,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/22/Modbus/" rel="next" title="Modbus汇总">
-                <i class="fa fa-chevron-left"></i> Modbus汇总
+              <a href="/2017/06/12/power/" rel="next" title="power">
+                <i class="fa fa-chevron-left"></i> power
               </a>
             
           </div>
@@ -569,10 +646,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/06/11/capacitance/" rel="prev" title="capacitance">
-                capacitance <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -759,7 +832,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#电阻器"><span class="nav-number">1.</span> <span class="nav-text">电阻器</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#硬件需求"><span class="nav-number">1.</span> <span class="nav-text">硬件需求</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BOOT代码烧写"><span class="nav-number">2.</span> <span class="nav-text">BOOT代码烧写</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码烧写"><span class="nav-number">3.</span> <span class="nav-text">代码烧写</span></a></li></ol></div>
             
 
           </div>
@@ -922,9 +995,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://www.haoyue.ml/2017/06/11/resistance/';
-          this.page.identifier = '2017/06/11/resistance/';
-          this.page.title = 'resistance';
+          this.page.url = 'http://www.haoyue.ml/2017/06/22/TinyBootManual/';
+          this.page.identifier = '2017/06/22/TinyBootManual/';
+          this.page.title = 'TinyBootManual';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://haoyue.disqus.com/embed.js';

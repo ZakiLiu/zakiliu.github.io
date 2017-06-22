@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.haoyue.ml/"/>
-  <updated>2017-06-11T15:32:50.000Z</updated>
+  <updated>2017-06-22T06:59:45.000Z</updated>
   <id>http://www.haoyue.ml/</id>
   
   <author>
@@ -14,6 +14,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TinyBootManual</title>
+    <link href="http://www.haoyue.ml/2017/06/22/TinyBootManual/"/>
+    <id>http://www.haoyue.ml/2017/06/22/TinyBootManual/</id>
+    <published>2017-06-22T05:25:01.000Z</published>
+    <updated>2017-06-22T06:59:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://opou03531.bkt.clouddn.com/blog/20170622/133220460.png?imageslim&quot; alt=&quot;TinyBoot&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tinyboot&lt;/strong&gt;是一个适用于&lt;strong&gt;STM8S&lt;/strong&gt;系列的微小Bootloader，单片机端仅占用&lt;strong&gt;256B&lt;/strong&gt; Flash空间。Flash中的这256B代码，和上位机程序配合，实现完整的引导加载程序功能。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://www.haoyue.ml/categories/Tech/"/>
+    
+      <category term="ST" scheme="http://www.haoyue.ml/categories/Tech/ST/"/>
+    
+      <category term="STM8" scheme="http://www.haoyue.ml/categories/Tech/ST/STM8/"/>
+    
+    
+      <category term="STM8" scheme="http://www.haoyue.ml/tags/STM8/"/>
+    
+      <category term="Bootloader" scheme="http://www.haoyue.ml/tags/Bootloader/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>power</title>
+    <link href="http://www.haoyue.ml/2017/06/12/power/"/>
+    <id>http://www.haoyue.ml/2017/06/12/power/</id>
+    <published>2017-06-12T14:42:21.000Z</published>
+    <updated>2017-06-20T07:43:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://opou03531.bkt.clouddn.com/2017-06-12-power.jpg&quot; alt=&quot;电源&quot;&gt;&lt;br&gt;电源部分知识介绍。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://www.haoyue.ml/categories/Tech/"/>
+    
+      <category term="Electronic" scheme="http://www.haoyue.ml/categories/Tech/Electronic/"/>
+    
+    
+      <category term="Electronic" scheme="http://www.haoyue.ml/tags/Electronic/"/>
+    
+      <category term="Power" scheme="http://www.haoyue.ml/tags/Power/"/>
+    
+  </entry>
   
   <entry>
     <title>capacitance</title>
